@@ -82,7 +82,7 @@ function Chat({sprites = "avataaars"}) {
                 {messages.map((message) =>(          
                     <p className={`chat__message ${message.name === user.displayName &&"chat__reciever"}`}>
                     <span className='chat__name'>
-                   {message.name}
+                   {message.name.slice(0,Math.max(message.message.length,13))}
                     </span>
                         {message.message}
                         <span className='chat__timestamp'>

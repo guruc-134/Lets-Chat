@@ -22,7 +22,15 @@ function App() {
                 <Chat/>
             </Route>
             <Route path ="/">
-            <Chat/>
+            {/* <Chat/> */}
+            <div className = 'outsideChat'>
+              <p>
+                Select an existing chat room 
+              </p>
+              <p>
+                or Create a new Chat room
+              </p>
+            </div>
             </Route>
             </Switch>
           </Router>
